@@ -19,11 +19,11 @@ def main():
     # Import configurations
     config_path = os.path.join(absolute_path.get(), 'config.yaml')
     with open(config_path) as config_file:
-        conf = yaml.safe_load(config_file)
+        config = yaml.safe_load(config_file)
 
     # Start testing logger
-    log.info('Configuration Username: ' + conf['account']['username'])
-    log.info('Configuration Password: ' + conf['account']['password'])
+    log.info('Configuration Username: ' + config['account']['username'])
+    log.info('Configuration Password: ' + config['account']['password'])
     current_timestamp = timestamp.get_current()
     log.info('Current Timestamp: ' + current_timestamp)
     # Finished testing logger
