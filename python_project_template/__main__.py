@@ -17,7 +17,7 @@ def main():
     log.info('Start program execution')
 
     # Import configurations
-    config_path = os.path.join(absolute_path.get(), 'conf.yaml')
+    config_path = os.path.join(absolute_path.get(), 'config.yaml')
     with open(config_path) as config_file:
         conf = yaml.safe_load(config_file)
 
