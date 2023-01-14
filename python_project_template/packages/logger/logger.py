@@ -15,7 +15,7 @@ def setup_app_logger(logger_name, log_file_path=None):
 
     # Set the format of the log message
     formatter = logging.Formatter(
-        '%(asctime)s | %(levelname)s | %(message)s',
+        '%(asctime)s | %(levelname)s | %(name)s | %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
 

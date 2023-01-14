@@ -2,7 +2,7 @@ from datetime import datetime
 import logging
 
 # Import logger
-log = logging.getLogger()
+log = logging.getLogger(__name__)
 
 
 def get_current():
