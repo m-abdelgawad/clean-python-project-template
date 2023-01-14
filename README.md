@@ -70,7 +70,7 @@ After a lot of reading and discussions with my colleagues, I reached this struct
 This project includes the following features:
 * Clean structure.
 * Attractive README template.
-* Configuration Yaml file and the code for importing it inside the project.
+* Configuration YAML file and the code for importing it inside the project.
 * Logger package with its setup inside the project and inside the packages of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
