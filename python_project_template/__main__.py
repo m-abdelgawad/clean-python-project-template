@@ -1,12 +1,12 @@
 import os
 import yaml
-from packages.project import absolute_path
+from packages.project import project
 from packages.logger import logger
 from packages.timestamp import timestamp
 
 
 # Initiate logger
-project_abs_path = os.path.dirname(absolute_path.get())
+project_abs_path = os.path.dirname(project.get_absolute_path())
 # TODO: Change Project Name
 logs_file_path = logger.create_log_file(
     app_name='project-name', project_abs_path=project_abs_path
@@ -19,7 +19,7 @@ def main():
     log.info('Start program execution')
 
     # Import configurations
-    config_path = os.path.join(absolute_path.get(), 'config.yaml')
+    config_path = os.path.join(project.get_absolute_path(), 'config.yaml')
     with open(config_path) as config_file:
         config = yaml.safe_load(config_file)
 
