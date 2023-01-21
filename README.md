@@ -150,7 +150,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Mohamed AbdelGawad Ibrahim - [@m-abdelgawad](https://www.linkedin.com/in/m-abdelgawad/) - +201069052620 - muhammadabdelgawwad@gmail.com
 
-Github Profile Link: [https://github.com/m-abdelgawad](https://github.com/m-abdelgawad)
+GitHub Profile Link: [https://github.com/m-abdelgawad](https://github.com/m-abdelgawad)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
