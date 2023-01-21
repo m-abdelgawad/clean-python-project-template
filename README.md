@@ -118,7 +118,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Screensshots
+### Screenshots
 
 <img src="images/screenshot.jpg">
 
