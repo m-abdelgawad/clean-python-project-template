@@ -1,5 +1,6 @@
 import os
 import yaml
+import traceback
 from packages.project import project
 from packages.logger import logger
 from packages.timestamp import timestamp
@@ -27,7 +28,7 @@ def main():
     log.info('Current Timestamp: ' + current_timestamp)
     # Finished testing logger
 
-    # raise Exception("Test exception to test the error logging")
+    raise Exception("Test exception to test the error logging")
 
     log.info('Finished program execution')
 
@@ -37,3 +38,4 @@ if __name__ == '__main__':
         main()
     except Exception as e:
         log.error(e)
+        log.error('Error Traceback: \n {0}'.format(traceback.format_exc()))
