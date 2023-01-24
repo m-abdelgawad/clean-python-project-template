@@ -1,6 +1,7 @@
-import logging
 import os
 import sys
+import inspect
+import logging
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
 
@@ -72,14 +73,23 @@ def create_log_file(app_name, parent_dir_path):
     return logs_file_path
 
 
-if __name__ == '__main__':
+def get(app_name='log'):
 
-    # Create log file
-    logs_file_ = create_log_file(
-        app_name='test', parent_dir_path='/'
+    # Get absolute path of the caller module
+    caller_abs_path = inspect.stack()[1].filename
+
+    # Get the absolute path of the Repo directory
+    # which is the parent directory of the parent directory of __main__.py
+    # that supposes to call this function
+    repo_abs_path = os.path.dirname(os.path.dirname(caller_abs_path))
+
+    # Create the logs file
+    logs_file_path = create_log_file(
+        app_name=app_name, parent_dir_path=repo_abs_path
     )
 
-    # Initiate logger
-    logger = setup_app_logger(logger_name='test', log_file_path=logs_file_)
+    # Create the logger
+    logger = setup_app_logger(logger_name='', log_file_path=logs_file_path)
 
-    logger.info('test')
+    # Return the logger
+    return logger
