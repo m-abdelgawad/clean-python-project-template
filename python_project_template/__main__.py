@@ -13,8 +13,10 @@ def main():
 
     log.info('Start program execution')
 
+    project_abs_path = project.get_absolute_path()
+
     # Import configurations
-    config_path = os.path.join(project.get_absolute_path(), 'config.yaml')
+    config_path = os.path.join(project_abs_path, 'config.yaml')
     with open(config_path) as config_file:
         config = yaml.safe_load(config_file)
 
