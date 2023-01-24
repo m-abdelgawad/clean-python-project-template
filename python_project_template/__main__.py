@@ -1,7 +1,7 @@
 import os
 import yaml
 import traceback
-from packages.project import project
+from packages.file import file
 from packages.logger import logger
 from packages.timestamp import timestamp
 
@@ -14,7 +14,8 @@ def main():
 
     log.info('Start program execution')
 
-    project_abs_path = project.get_absolute_path()
+    project_abs_path = file.get_caller_parent()
+    print(project_abs_path)
 
     # Import configurations
     config_path = os.path.join(project_abs_path, 'config.yaml')
@@ -28,7 +29,7 @@ def main():
     log.info('Current Timestamp: ' + current_timestamp)
     # Finished testing logger
 
-    raise Exception("Test exception to test the error logging")
+    # raise Exception("Test exception to test the error logging")
 
     log.info('Finished program execution')
 
