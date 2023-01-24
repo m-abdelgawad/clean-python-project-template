@@ -6,10 +6,11 @@ from packages.timestamp import timestamp
 
 
 # Initiate logger
-project_abs_path = os.path.dirname(project.get_absolute_path())
+project_abs_path = project.get_absolute_path()
+repo_abs_path = os.path.dirname(project_abs_path)
 # TODO: Change Project Name
 logs_file_path = logger.create_log_file(
-    app_name='project-name', project_abs_path=project_abs_path
+    app_name='project-name', parent_dir_path=repo_abs_path
 )
 log = logger.setup_app_logger(logger_name='', log_file_path=logs_file_path)
 

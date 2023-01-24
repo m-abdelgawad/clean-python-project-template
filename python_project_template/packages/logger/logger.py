@@ -49,10 +49,10 @@ def setup_app_logger(logger_name, log_file_path=None):
     return logger
 
 
-def create_log_file(app_name, project_abs_path):
+def create_log_file(app_name, parent_dir_path):
 
     # Create logs folder if not exists
-    logs_folder_path = os.path.join(project_abs_path, 'logs')
+    logs_folder_path = os.path.join(parent_dir_path, 'logs')
     if not os.path.exists(logs_folder_path):
         os.makedirs(logs_folder_path)
 
@@ -63,7 +63,7 @@ def create_log_file(app_name, project_abs_path):
     logs_file_name = app_name + "__" + current_timestamp + ".log"
 
     # Logs file path
-    logs_file_path = os.path.join(project_abs_path, 'logs', logs_file_name)
+    logs_file_path = os.path.join(parent_dir_path, 'logs', logs_file_name)
 
     # Create the logs file if not exists
     if not os.path.exists(logs_file_path):
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
     # Create log file
     logs_file_ = create_log_file(
-        app_name='test', project_abs_path='/'
+        app_name='test', parent_dir_path='/'
     )
 
     # Initiate logger
