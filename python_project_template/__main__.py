@@ -14,7 +14,7 @@ def main():
 
     log.info('Start program execution')
 
-    project_abs_path = file.get_caller_parent()
+    project_abs_path = file.caller_dir_path()
     print(project_abs_path)
 
     # Import configurations
