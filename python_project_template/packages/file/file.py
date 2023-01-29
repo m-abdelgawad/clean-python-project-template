@@ -13,5 +13,10 @@ def caller_dir_path():
     return os.path.dirname(caller_abs_path)
 
 
+def read(path):
+    with open(path) as file:
+        return file.read()
+
+
 if __name__ == "__main__":
     print(caller_file_path())
