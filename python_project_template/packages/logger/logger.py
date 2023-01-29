@@ -36,7 +36,7 @@ def setup_app_logger(logger_name, log_file_path=None):
         # Set a FileHandler write the logs inside the file
         file_handler = RotatingFileHandler(
             filename=log_file_path, mode='a', maxBytes=5*1024*1024,
-            backupCount=100, encoding=None, delay=False
+            backupCount=100, encoding='utf8', delay=False
         )
 
         # Set the format of the FileHandler
