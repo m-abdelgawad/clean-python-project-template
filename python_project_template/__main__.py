@@ -1,9 +1,9 @@
 import os
 import yaml
 import traceback
-from .packages.file import file
-from .packages.logger import logger
-from .packages.timestamp import timestamp
+from packages.file import file
+from packages.logger import logger
+from packages.timestamp import timestamp
 
 
 # Initiate logger
