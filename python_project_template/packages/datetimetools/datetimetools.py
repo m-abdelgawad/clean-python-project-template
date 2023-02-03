@@ -5,7 +5,7 @@ import logging
 log = logging.getLogger(__name__)
 
 
-def get_current():
+def get_current_timestamp():
     log.info("Start datetimetools module")
     current_timestamp = str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S"))
     log.info("Finished datetimetools module")

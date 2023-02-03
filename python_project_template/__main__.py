@@ -3,7 +3,7 @@ import yaml
 import traceback
 from packages.file import file
 from packages.logger import logger
-from packages.timestamp import timestamp
+from packages.datetimetools import datetimetools
 
 
 # Initiate logger
@@ -25,7 +25,7 @@ def main():
     # Start testing logger
     log.info('Configuration Username: ' + config['account']['username'])
     log.info('Configuration Password: ' + config['account']['password'])
-    current_timestamp = timestamp.get_current()
+    current_timestamp = datetimetools.get_current_timestamp()
     log.info('Current Timestamp: ' + current_timestamp)
     # Finished testing logger
 
