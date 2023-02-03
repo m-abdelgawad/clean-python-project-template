@@ -7,7 +7,7 @@ from packages.timestamp import timestamp
 
 
 # Initiate logger
-log = logger.get(app_name='log')
+log = logger.get(app_name='logs', enable_logs_file=False)
 
 
 def main():
