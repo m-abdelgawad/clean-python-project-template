@@ -28,3 +28,12 @@ def format_date(input_date, target_format):
 
 def format_str_date(input_date, current_format, target_format):
     return datetime.strptime(input_date, current_format).strftime(target_format)
+
+
+def datetime_to_epoch(datetime_object):
+    epoch = datetime.utcfromtimestamp(0)
+    return int((datetime_object.replace(microsecond=0) - epoch).total_seconds())
+
+
+def epoch_to_datetime(epoch_date, output_format):
+    return datetime.fromtimestamp(epoch_date).strftime(output_format)
