@@ -102,8 +102,8 @@ To get a local copy up and running follow these simple steps.
 
 ### Packages
 * Logger
-* Timestamp
-* Project
+* datetimetools
+* file
 
 ### Service Accounts
 * None
