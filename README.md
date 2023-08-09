@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <img src="readme_files/logo.png" alt="Logo" width="80" height="80">
   <h3 align="center">Clean Python Project Template</h3>
 </div>
 
@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/cover.jpg" alt="Cover Image">
+<img src="readme_files/cover.jpg" alt="Cover Image">
 
 * Project Name: Clean Python Project Template
 * Version: v1.0.0
